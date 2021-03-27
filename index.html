@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--Search bar-->
+    <form name="searchForm" class="block">
+        <input type="text" placeholder="City" name="cityName">
+        <input type="reset" value="Search" name="button">
+    </form>
+
+    <!--Display-->
+    <div class="display block">
+
+        <h3>Geolocation:</h3>
+        <div class="sub-block">
+            <p id="cityName" class="item"></p>
+            <p id="countryName" class="item"></p>
+        </div>
+
+        <h3>Sunrise and Sunset:</h3>
+        <div class="sub-block">
+            <p id="sunrise" class="item"></p>
+            <p id="sunset" class="item"></p>
+        </div>
+
+        <h3>Temprature, humidity and pressure:</h3>
+        <div class="sub-block">
+            <p id="temp" class="item temp"></p>
+            <p id="tempMin" class="item temp"></p>
+            <p id="tempMax" class="item temp"></p>
+            <p id="humidity" class="item"></p>
+            <p id="pressure" class="item"></p>
+        </div>
+
+        <h3>Wind:</h3>
+        <div class="sub-block">
+            <p id="speed" class="item"></p>
+            <p id="deg" class="item"></p>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
